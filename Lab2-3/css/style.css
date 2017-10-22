@@ -1,0 +1,204 @@
+body{
+  background-image: url(../images/backgroud.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+footer {
+    padding: 10px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    display: block;
+    text-align: center;
+    font-family: Consolas;
+    background-color: #295E6A;
+    height: 100px;
+   }
+
+.footer-news{
+  margin-top: 540px;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: Consolas;
+  color: #295E6A;
+}
+
+.text{
+  font-family: Consolas;
+  color: black;
+  border: 2px solid #295E6A;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+b{
+  font-size: 20px;
+}
+p{
+  font-size: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #295E6A;
+}
+.header-news{
+  color:white;
+}
+.menu{
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.button{
+    position: relative;
+    background-color: #295E6A;
+    font-size: 22px;
+    margin: none;
+    color: #F1F8E9;
+    font-family: Elaphant;
+    padding: 14px;
+    border: 1px;
+    width: 12%;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.button1:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  color: black;
+}
+
+.dropbutton{
+  position: relative;
+  background-color: #295E6A;
+  border-radius: none;
+  font-size: 22px;
+  margin: none;
+  color: #F1F8E9;
+  font-family: Elaphant;
+  padding: 14px;
+  border: 1px;
+  width: 160px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+.dropbutton:hover{
+  background-color: white;
+  color: black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-family: Elaphant;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 1s;
+}
+
+.dropdown-content a:hover {
+  background-color: #5C868E;
+  color:white
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;}
+
+.anime {
+    width: 140px;
+    background-color:#295E6A;
+    margin: auto;
+    animation: move 14s infinite;
+    color: white;
+}
+
+@keyframes move {
+    50% {width: 60%;}
+}
+.images{
+  width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.news{
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  border: 1px solid #295E6A;
+  width: 20%;
+  height: 500px;
+  float: left;
+  transition: all 1s;
+}
+.news-left{
+  margin-left: 5%;
+}
+.new-right{
+  margin-right: 5%;
+}
+.news-margin{
+  margin-left: 3.33%
+}
+.news-title{
+  font-size: 22px;
+  text-align: center;
+  font-family: Consolas;
+  color: #295E6A;
+}
+.text-decs{
+  text-decoration: none;
+}
+.news-inside{
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  font-size: 14px;
+  font-family: Consolas;
+  color: #295E6A;
+}
+.header-title{
+  font-family: Consolas;
+  background-color:#295E6A;
+  margin-top: 0;
+  color: #F1F8E9;
+  padding: 20px;
+}
+
+.news:hover{
+  background-color: white;
+  box-shadow: 10px 16px 32px 10px rgba(0,0,0,0.2);
+}
+
+.footer-text{
+  color: white;
+}
+a.email{
+  color: black;
+}
