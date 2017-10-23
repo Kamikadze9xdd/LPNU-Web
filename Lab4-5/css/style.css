@@ -156,3 +156,19 @@ hr{
   margin-left: 7%;
   margin-right: 7%;
 }
+.btn-add button{
+  width: 100%;
+}
+.admin{
+  margin-top: 10px;
+}
+
+.images{
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+}
+.admin-text{
+  margin-top: 10px;
+  height: 300px;
+}
