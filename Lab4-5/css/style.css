@@ -12,7 +12,10 @@ body{
 
   margin-top: 70px;
 }
-
+footer{
+  position: relative;
+  bottom: 0;
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Raleway";
@@ -116,6 +119,10 @@ hr{
   color: black;
 }
 .news{
+  transition: 0.5s;
+}
+
+.news{
   padding-top: 10px;
 }
 .nav-item:hover{
@@ -171,4 +178,18 @@ hr{
 .admin-text{
   margin-top: 10px;
   height: 300px;
+}
+.admin-button{
+  margin-top: 10px;
+  float: right;
+}
+.contacts{
+  margin-top: 12px;
+}
+.feedback{
+  width: 100%;
+  min-height: 200px;
+}
+.table-head{
+  padding: 0;
 }
