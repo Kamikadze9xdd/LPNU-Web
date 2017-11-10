@@ -94,11 +94,20 @@
         euismod. Donec sed odio dui.
       </p>
     </div>
-    <div>
-      <h2 class="centered head-border ">Новий відгук</h2>
-      <textarea  class="feedback form-control" type="text" rows="5"/>
+    <div id="comment-list">
+
+    </div>
+    <div class="container">
+      <form id="form">
+
+
+      <h2 class="centered head-border">Новий відгук</h2>
+      <input id="username" type="text" class="form-control" placeholder="Ваше ім'я та Прізвище">
+      <br />
+      <textarea  id="text" class="feedback form-control" type="text" rows="5"/>
     </textarea>
-      <button class="admin-button">Відправити</button>
+      <button type="button" class="admin-button" onclick="addComment()">Відправити</button>
+        </form>
     </div>
   </div>
 </content>
@@ -107,5 +116,6 @@
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/comment.js"></script>
 </body>
 </html>

@@ -70,14 +70,21 @@
   <div class="container admin">
     <div class="row">
       <div class="col-lg-6 col-offset-2 btn-add">
-        <button>Додати зображення</button>
-        <img class="images img-fluid" src="images/images.jpg" alt="error" />
+        <form id="news-img-form">
+            <label>Виберіть зображення</label>
+            <input id="news-img" type="file" class="form-control-file"
+            accept="image/*">
+        </form>
+        <img src="images/images.jpg" id="target" class="images img-fluid" />
       </div>
       <div class="col-lg-6">
-        <input type="text" class="form-control" placeholder="Заголовок">
-        <textarea type="text" class="form-control admin-text" rows="14">
-        </textarea>
-        <button type="submit" class="admin-button">Відправити</button>
+        <form id="news-form">
+          <input id="title" type="text" class="form-control" placeholder="Заголовок"
+          style="margin-top: 30px">
+          <textarea id="text"type="text" class="form-control admin-text" rows="14">
+          </textarea>
+          <button type="button" class="admin-button" onclick="addNews()">Відправити</button>
+        </form>
       </div>
   </div>
 </div>
@@ -87,5 +94,6 @@
     </footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/admin.js"></script>
 </body>
 </html>
