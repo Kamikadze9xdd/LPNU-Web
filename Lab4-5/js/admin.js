@@ -1,11 +1,31 @@
+var i = 0;
+
+function isOnline() {
+    return window.navigator.onLine;
+}
+
 function addNews() {
-    if ($('#title').val() === "" || $('#text').val() === "" || $('#news-img').val() === "") {
+    if ($('#news-name').val() === "" || $('#news-text').val() === "" || $('#news-img').val() === "") {
         alert('Заповніть всі поля');
         return false;
-    } else {
+    }
+    if (isOnline()) {
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
+        target.src = 'images/images.jpg';
         alert('Новина успішно надіслана.');
+    } else {
+        var name = document.getElementById('news-name').value;
+        var text = document.getElementById('news-text').value;
+        imgData = target.src;
+        i++;
+        var list = [];
+        list.push({"name": (name), "text": (text)});
+        localStorage.setItem('n' + i, JSON.stringify(list));
+        localStorage.setItem('i' + i, (imgData));
+        document.getElementById('news-form').reset();
+        document.getElementById('news-img-form').reset();
+        target.src = 'images/images.jpg';
     }
 }
 
