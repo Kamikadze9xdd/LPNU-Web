@@ -67,7 +67,7 @@
 <content>
   <div class="container">
     <h2 class="centered head-border ">Відгуки</h2>
-    <div id="comment-list">
+    <div id="reviews-list">
     </div>
     <div>
       <h2>Вася Пупкін 29.07.2016</h2>
@@ -99,11 +99,11 @@
     <div class="container">
       <form id="form">
       <h2 class="centered head-border">Новий відгук</h2>
-      <input id="username" type="text" class="form-control" placeholder="Ваше ім'я та Прізвище">
+      <input id="name" type="text" class="form-control" placeholder="Ваше ім'я та Прізвище">
       <br />
       <textarea  id="text" class="feedback form-control" type="text" rows="5"/>
     </textarea>
-      <button type="button" class="admin-button" onclick="addComment()">Відправити</button>
+      <button type="button" class="admin-button" onclick="addReview()">Відправити</button>
         </form>
     </div>
   </div>
@@ -114,5 +114,6 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/comment.js"></script>
+<script src="js/indexeddb.js"></script>
 </body>
 </html>

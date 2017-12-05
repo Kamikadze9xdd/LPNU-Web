@@ -12,20 +12,32 @@ function addNews() {
     if (isOnline()) {
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
-        target.src = 'images/images.jpg';
+        target.src = 'images/picture-icon.png';
         alert('Новина успішно надіслана.');
     } else {
-        var name = document.getElementById('news-name').value;
-        var text = document.getElementById('news-text').value;
-        imgData = target.src;
-        i++;
-        var list = [];
-        list.push({"name": (name), "text": (text)});
-        localStorage.setItem('n' + i, JSON.stringify(list));
-        localStorage.setItem('i' + i, (imgData));
+        if (useLocalStorage) {
+            var name = document.getElementById('news-name').value;
+            var text = document.getElementById('news-text').value;
+            imgData = target.src;
+            i++;
+            var list = [];
+            list.push({"name": (name), "text": (text)});
+            localStorage.setItem('n' + i, JSON.stringify(list));
+            localStorage.setItem('i' + i, (imgData));
+        }
+        else {
+            var transaction = db.transaction(["news"], "readwrite");
+            var store = transaction.objectStore("news");
+            var news1 = {
+                name: document.getElementById('news-name').value,
+                text: document.getElementById('news-text').value,
+                img: target.src
+            };
+            store.add(news1);
+        }
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
-        target.src = 'images/images.jpg';
+        target.src = 'images/picture-icon.png';
     }
 }
 
