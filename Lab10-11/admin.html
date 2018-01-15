@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html manifest="manifest.cache">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Розрахунки в господарському обороті</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <head>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">РвГО</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="newspage.html">Новини</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Студентам
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul>
+                <li><a class="dropdown-item" href="program.html">Програма
+                </a></li>
+                <li><a class="dropdown-item" href="labor.html">Лабораторні
+                </a></li>
+                <li><a class="dropdown-item" href="literatura.html">Література
+                </a></li>
+          </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="comments.html">Відгуки</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакти</a>
+            </li>
+    <li class="nav-item">
+      <a class="nav-link" href="admin.html">Адмін</a>
+    </li>
+      </div>
+    </div>
+  </nav>
+  <div id="headerwarp">
+    <div class="container-fluid">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Розрахунки в господарському обороті</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</head>
+<content>
+  <div class="container admin">
+    <div class="row">
+      <div class="col-lg-6 col-offset-2 btn-add">
+        <form id="news-img-form">
+            <label>Виберіть зображення</label>
+            <input id="news-img" type="file" class="form-control-file"
+            accept="image/*">
+        </form>
+        <img src="images/images.jpg" id="target" class="images img-fluid" />
+      </div>
+      <div class="col-lg-6">
+        <form id="news-form">
+          <input id="news-name" type="text" class="form-control" placeholder="Заголовок"
+          style="margin-top: 30px">
+          <textarea id="news-text" class="form-control admin-text" value="text1">
+          </textarea>
+          <button type="button" class="admin-button" onclick="addNews()">Відправити</button>
+        </form>
+      </div>
+  </div>
+</div>
+</content>
+<footer class="footer" style="margin-top: 20px">
+      <p class="centered">&copy; Created by Nazar Kulyk</p>
+    </footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/indexeddb.js"></script>
+</body>
+</html>

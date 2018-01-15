@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html manifest="manifest.cache">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Розрахунки в господарському обороті</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">РвГО</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="newspage.html">Новини</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Студентам
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul>
+                <li><a class="dropdown-item" href="program.html">Програма
+                </a></li>
+                <li><a class="dropdown-item" href="labor.html">Лабораторні
+                </a></li>
+                <li><a class="dropdown-item" href="literatura.html">Література
+                </a></li>
+          </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="comments.html">Відгуки</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакти</a>
+            </li>
+    <li class="nav-item">
+      <a class="nav-link" href="admin.html">Адмін</a>
+    </li>
+      </div>
+    </div>
+  </nav>
+  <div id="headerwarp">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Розрахунки в господарському обороті</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<content>
+  <div class="container">
+    <h2 class="centered head-border ">Відгуки</h2>
+    <div id="reviews-list">
+    </div>
+    <div>
+      <h2>Вася Пупкін 29.07.2016</h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+        massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+        euismod. Donec sed odio dui.
+      </p>
+    </div>
+    <div>
+      <h2>Вася Пупкін 29.07.2016</h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+        massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+        euismod. Donec sed odio dui.
+      </p>
+    </div>
+    <div>
+      <h2>Вася Пупкін 29.07.2016</h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+        tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+        massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+        euismod. Donec sed odio dui.
+      </p>
+    </div>
+    <div class="container">
+      <form id="form">
+      <h2 class="centered head-border">Новий відгук</h2>
+      <input id="name" type="text" class="form-control" placeholder="Ваше ім'я та Прізвище">
+      <br />
+      <textarea  id="text" class="feedback form-control" type="text" rows="5"/>
+    </textarea>
+      <button type="button" class="admin-button" onclick="addReview()">Відправити</button>
+        </form>
+    </div>
+  </div>
+</content>
+<footer class="footer" style="margin-top: 20px">
+      <p class="centered">&copy; Created by Nazar Kulyk</p>
+    </footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/indexeddb.js"></script>
+</body>
+</html>
